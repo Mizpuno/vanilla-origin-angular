@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+<app-header></app-header>
+
+  <div class="container-fluid p-0">
+    <div class="container">
+      <ng-template [ngIf]="!isBackOffice">
+        <div class="row">
+          <div class="col-lg-3"> 
+            <app-left-content></app-left-content>
+          </div>
+            
+          <div class="col-lg-6">
+            <app-middle-content></app-middle-content>
+          </div>
+            
+          <div class="col-lg-3">
+            <app-right-content></app-right-content>
+          </div>
+        </div>
+      </ng-template>
+
+      <ng-template [ngIf]="isBackOffice">
+        <app-tools></app-tools>
+      </ng-template>
+    </div>
+  </div>
+
+<app-footer></app-footer>

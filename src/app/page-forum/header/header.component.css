@@ -1,0 +1,45 @@
+header {
+    font-weight: 700;
+    font-size: 64px;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+header,h4 {
+    text-align: center;
+}
+
+.bg-header-content {
+    background: #D9D9D9;
+    min-height: 100%;
+}
+
+.my-custom {
+    padding: 120px 0;
+}
+
+.tools-compo-struct {
+    margin: 10px 0;
+    padding: 5px;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+}
+
+.form-input {
+    border-radius: 15px;
+}
+
+.btn-custom-form-submit {
+    color: #FFF;
+    background-color: #ACACAC;
+    border-radius: 15px;
+}
+
+.btn-custom-create {
+    width: 100%;
+
+    text-align: center;
+    font-weight: bold;
+}

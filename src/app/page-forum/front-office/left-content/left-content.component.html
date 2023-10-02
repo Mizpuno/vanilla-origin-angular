@@ -1,0 +1,24 @@
+<div class="container d-flex flex-column group-struct p-3">
+    <div>
+        <p class="topic">Classical Community</p>
+        <div class="d-flex flex-column">
+            <button class="btn btn-package" (click)="fillCommunity(undefined)">Global</button>
+            <button class="btn btn-package" (click)="fillCommunity('introduce')">Introduce</button>
+            <button class="btn btn-package" (click)="fillCommunity('game-discussion')">Game Disscussion</button>
+            <button class="btn btn-package" (click)="fillCommunity('feedback-suggestion')">Feedback & Suggestion</button>       
+        </div>
+    </div>
+    <div>
+        <p class="topic">Official Chat</p>
+        <div class="d-flex flex-column">
+            <button class="btn btn-package" (click)="fillCommunity('news')">News</button>
+            <button class="btn btn-package" (click)="fillCommunity('rules')">Rules</button>
+            <button class="btn btn-package" (click)="fillCommunity('supports')">Supports</button>
+        </div>
+    </div>
+    <div class="popup-struct">
+        <p style="font-weight: bold;">Own Community!</p>
+        <p>We are now giving you the opportunity to create your own neighborhood. Interesting?</p>
+        <button class="btn-custom">Learn more</button>
+    </div>
+</div>

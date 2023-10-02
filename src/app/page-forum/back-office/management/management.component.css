@@ -1,0 +1,43 @@
+/* div, button {
+    border: 2px solid red;
+} */
+
+button {
+    margin: 0 0 0 10px;
+}
+
+.content-struct {
+    margin: 5px;
+    padding: 20px 60px 30px 60px;
+
+    border: transparent;
+    border-radius: 15px;
+    box-shadow: -1px 2px 19px -3px rgba(0,0,0,0.20);
+}
+
+.float-struct {
+    margin: 0 0 20px 0;
+    text-align: right;
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+.btn-noti {
+    color: #FFC27B;
+    border: 3px solid #FFC27B;
+}
+
+.btn-trash {
+    color: #FF4848;
+    border: 3px solid #FF4848;
+}
+
+.outer {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}

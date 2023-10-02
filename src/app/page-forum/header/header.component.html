@@ -1,0 +1,30 @@
+<div class="container-fluid bg-header-content my-custom">
+    <div class="container-md p-0">
+        <div class="d-flex flex-column">
+            <header class="mb-3">FORUM</header>
+            <h4>Community chat services for vanilla origin</h4>
+            <h4>Please engage in polite conversation to create a vibrant and welcoming community.</h4>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row p-0">
+            <div class="col-md-8">
+                <div class="tools-compo-struct">
+                    <div class="d-flex" role="search" id="searchBar">
+                        <button class="btn btn-custom-form-submit mx-2 px-4" type="submit" (click)="readForm(search.value)">Search</button>
+                        <input class="form-control form-input me-2" type="search" placeholder="Search for any topics."(input)="readForm(searchValue)" [(ngModel)]="searchValue" #search>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class=" tools-compo-struct">
+                    <button class="btn btn-custom-create" (click)="changeOffice()">{{editText()}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

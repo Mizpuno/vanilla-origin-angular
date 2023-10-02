@@ -1,0 +1,36 @@
+.group-struct > div {
+    margin-bottom: 20px;
+}
+
+.topic {
+    padding-bottom:10px;
+
+    font-weight: bold;
+    border-bottom: 1.5px solid #B2B2B2;
+}
+
+.popup-struct {
+    padding: 15px;
+
+    background-color: #D9D9D9;
+    border-radius: 15px;
+}
+
+.btn-custom {
+    padding: 5px 20px;
+    float: right;
+    background-color: #FFF;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-package {
+    text-align: left;
+    border-radius: 0;
+}
+
+.btn-package:hover {
+    color: #77B6FF;
+    border-left: 5px solid #77B6FF;
+    transition-duration: 0.3s;
+}

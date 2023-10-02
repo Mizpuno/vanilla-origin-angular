@@ -1,0 +1,11 @@
+.row > div {
+    padding: 0;
+}
+
+div.container-fluid {
+    margin-top: 30px;
+}
+
+/* div {
+    border: 2px solid red;
+} */

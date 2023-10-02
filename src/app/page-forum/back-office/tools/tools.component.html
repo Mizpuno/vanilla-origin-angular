@@ -1,0 +1,67 @@
+<ng-template [ngIf]="!userStatus" [ngIfElse]="LoginSession">
+    <div class="p-custom box-information">
+        <div class="row">
+            <div class="col-lg-7">
+                <h6>It's seem you haven't login yet.</h6>
+                <p>do you are our member right now? click login button on nav bar to create new one, or login your own account first.</p>
+            </div>
+            <div class="col-lg-5 custom-image">
+            </div>
+        </div>
+        
+    </div>
+</ng-template>
+
+<ng-template #LoginSession >
+        <div class="row">
+            <div class="col-lg-3 profile-struct">
+                <div class="container">
+                    <div>
+                        <h6>User's</h6>
+                        <h6>now you are member tier.</h6>
+                    </div>
+                    <p>For anyone who is member you can accessible the post function to the classical community. </p>
+                </div>
+            </div>
+            <div class="col-lg-9 px-2 p-res">
+                <div class="container tools-struct p-0">
+                    <div class="container text-area-struct">
+                        <input class="topic mb-1 p-2" type="text" placeholder="what is your topic ?" #topic>
+                        <textarea id="content-field" rows="5" placeholder="fill the content to post here." #content></textarea>
+                    </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-9 container category p-1">
+                                    <span>
+                                        <button (click)="community = 'introduce'">Introduce</button>
+                                    </span>
+                                    <span>
+                                        <button (click)="community = 'game-discussion'">Game-Disscussion</button>
+                                    </span>
+                                    <span>
+                                        <button (click)="community = 'feedback-suggestion'">Feedback & Suggestion</button>
+                                    </span>
+                                </div>
+                                <div class="col-sm-3 post p-1">
+                                    <button (click)="createPost(topic.value, content.value)">POST</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    <app-management></app-management>
+</ng-template>
+
+
+<ng-template>
+    <span>
+        <button (click)="community = 'news'">News</button>
+    </span>
+    <span>
+        <button (click)="community = 'rules'">Rules</button>
+    </span>
+    <span>
+        <button (click)="community = 'supports'">Supports</button>
+    </span>    
+</ng-template>

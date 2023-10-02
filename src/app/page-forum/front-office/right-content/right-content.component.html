@@ -1,0 +1,47 @@
+<div class="container d-flex flex-column group-struct p-3">
+    <div>
+        <p class="topic">Top Users</p>
+        <div class="d-flex flex-column">
+            <button class="btn btn-package">Global</button>
+            <button class="btn btn-package">Introduce</button>
+            <button class="btn btn-package">Game Disscussion</button>
+            <button class="btn btn-package">Feedback & Suggestion</button>       
+        </div>
+    </div>
+    <div class="popup-struct">
+        <p style="font-weight: bold;">Discord</p>
+        <div class="d-flex">
+            <div class="flex-fill content-adjust">
+                <p class="p-title">76</p>
+                <p>Person online</p>
+            </div>
+            <div class="flex-fill" style="position: relative">
+                <button class="content-custom"><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon></button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p class="topic">Recent Posts</p>
+        <div *ngFor="let post of posts" class="d-flex flex-column">
+            <div class="d-flex my-2">
+                <div>
+                    <button class="user-profile"></button>
+                </div>
+                <div class="flex-grow-1">
+                    <p class="mini-title">{{post.topic}}</p>
+                    <p class="mini-source">
+                        By {{post.client?.username}}, {{seperateDateTime(post.postTime)[1]}}<br>
+                        {{seperateDateTime(post.postTime)[0]}}
+                    </p>
+                </div>
+                <div>
+                    <div 
+                    [style.background-color]="getBackGroundColor(post.community)"
+                    class="status-box"
+                    >
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

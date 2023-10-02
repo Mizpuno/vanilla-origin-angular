@@ -1,0 +1,56 @@
+
+<div class="container-custom">
+    <div class="container float-adjust">
+        <div class="row">
+            <div class="col-md p-0">
+                <div class="bg-preview">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="col-md p-0 bg-white">
+                <div class="d-flex flex-column">
+                    <div class="content-struct">
+                        <button class="btn btn-cl" [routerLink]="['/']">
+                            <fa-icon [icon]="['fas', 'x']" size="1x" style="float: right;"></fa-icon>
+                        </button>
+                    </div>
+                    <div>
+                        <h1>LOG IN</h1>
+                        <p>
+                            Hello and welcome to the vanilla Minecraft origin! We are happy to 
+                            have you join us as we embark on an expedition, practice survival 
+                            skills, and explore with our friends.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="d-flex flex-column justify-content-center my-4" id="form">
+                            <input class="form-center" type="text" placeholder="Username" id="username" #user>
+                            <input class="form-center" type="password" placeholder="Password" id="password" #pass>
+                        </div>
+                        <div>
+                            <p style="
+                                font-weight: normal; 
+                                font-size: 16px;
+                                text-align: center;
+                                "
+                                [style.color]="isError ? 'rgb(255, 67, 67)' : 'rgb(80, 221, 90)'"
+                                id="information"
+                            >{{information}}</p>
+                        </div>      
+                        <div class="container my-4">
+                            <div class="row">
+                                <div class="col p-0 btn-center">
+                                    <button class="btn btn-custom bg-login" type="submit" (click)="readLoginForm(user.value, pass.value)">Login</button>
+                                </div>
+                                <div class="col p-0 btn-center">
+                                    <button class="btn btn-custom bg-register" type="submit" (click)="readRegisterForm(user.value, pass.value)">Register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

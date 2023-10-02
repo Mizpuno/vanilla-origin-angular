@@ -1,0 +1,22 @@
+* {
+    color: #FFFF;
+}
+
+.bg-custom-nav {
+    background-color: #898989;
+}
+
+.server-ip {
+    padding: 5px 20px;
+
+    color: #000;
+    background-color: #FFFF;
+    border: none;
+    border-radius: 25px;
+}
+
+.lang {
+    background-color: #727272;
+    border: none;
+    border-radius: 15px;
+}

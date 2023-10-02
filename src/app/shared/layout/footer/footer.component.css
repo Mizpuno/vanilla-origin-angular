@@ -1,0 +1,58 @@
+.btn-group-custom {
+    padding: 5px;
+    
+    background-color: #D9D9D9;
+    border-radius: 50px;
+}
+
+.btn-group-custom > button {
+    margin: auto 5px;
+    width: 150px;
+
+    font-weight: bold;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 15px;
+    transition-duration: 0.3s;
+}
+
+.btn-group-custom > button:hover {
+    background-color: #f1f1f1;
+    transition-duration: 0.3s;
+}
+
+.btn-active {
+    background-color: #FFF !important;
+}
+
+.my-custom {
+    margin: 90px 0 100px 0;
+}
+
+.div-width-adjust > div {
+    width: 200px;
+    height: 200px;
+}
+
+.div-width-custom {
+    width: 250px !important;
+}
+
+.p-custom > div {
+    padding: 0 50px;
+}
+
+.p-head {
+    color: #818181;
+}
+
+.p-pages {
+    color: #818181;
+}
+
+.cpy-sign {
+    margin: 20px auto 50px auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+}

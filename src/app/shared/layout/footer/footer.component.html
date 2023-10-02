@@ -1,0 +1,62 @@
+<div class="container-fluid my-custom">
+    <div class="container">
+        <div class="row flex-wrap justify-content-evenly div-width-adjust p-0 p-custom">
+            <ng-template #About [ngIf]="switchCondition == 0">
+                <div class="col">
+                    <p class="p-head">Who we are?</p>
+                    <p >we’re group of person who passionate with vanilla.</p>
+                </div>
+                <div class="col">
+                    <p class="p-head">Our target</p>
+                    <p>become the most popular of the vanilla community server.</p>
+                </div>
+                <div class="col">
+                    <p class="p-head">Creators</p>
+                    <p>we are grateful to everyone who participated in project.</p>
+                </div>
+            </ng-template>
+    
+            <ng-template #Services [ngIf]="switchCondition == 1">
+                <div class="col">
+                    <p class="p-head">Game Services</p>
+                    <p >now has a local minecraft vanilla server available.</p>
+                </div>
+                <div class="col">
+                    <p class="p-head">Host located</p>
+                    <p>@localhost,<br>tested version on pc</p>
+                </div>
+                <div class="col div-width-custom">
+                    <p class="p-head">Others</p>
+                    <p>on our website, we still offer typical services (see explanation below).</p>
+                    <p class="p-pages">forum, docs, report, donate</p>
+                </div>
+            </ng-template>
+    
+            <ng-template #Content [ngIf]="switchCondition == 2">
+                <div class="col div-width-custom">
+                    <p class="p-head">Client Supporter</p>
+                    <p>vanilo.support@gmail.com<br>vo.sp.-teamname-@gmail.com</p>
+                </div>
+                <div class="col">
+                    <p class="p-head">Team lists</p>
+                    <span>for our support's name and the information, </span> <a class="link">click here.</a>
+                </div>
+            </ng-template>
+        </div>
+    </div>
+</div>
+
+<div class="container p-0">
+    <div class="d-flex justify-content-center">
+        <div class="btn-group-custom px-0">
+            <button (click)="onClickAbout()" [ngClass]="{'btn-active': switchCondition == 0}">About</button>
+            <button (click)="onClickServices()" [ngClass]="{'btn-active': switchCondition == 1}">Services</button>
+            <button (click)="onClickContact()" [ngClass]="{'btn-active': switchCondition == 2}">Contact</button>
+        </div>
+    </div>
+
+    <div id="Copyright">
+        <p class="cpy-sign">© 2023 - Vanilla Origin, inc. - All Rights Reserved</p>
+    </div>
+</div>
+

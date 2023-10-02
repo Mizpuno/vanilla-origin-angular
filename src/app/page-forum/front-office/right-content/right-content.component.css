@@ -1,0 +1,86 @@
+.group-struct > div {
+    margin-bottom: 20px;
+}
+
+.topic {
+    padding-bottom:10px;
+
+    font-weight: bold;
+    border-bottom: 1.5px solid #B2B2B2;
+}
+
+.popup-struct {
+    padding: 15px;
+
+    background-color: #D9D9D9;
+    border-radius: 15px;
+}
+
+.btn-custom {
+    padding: 5px 20px;
+    float: right;
+    background-color: #FFF;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-package {
+    text-align: left;
+    border-radius: 0;
+}
+
+.btn-package:hover {
+    color: #77B6FF;
+    border-left: 5px solid #77B6FF;
+    transition-duration: 0.3s;
+}
+
+.p-title {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.content-adjust > p {
+    margin: 0;
+}
+
+.content-custom {
+    float: right;
+    padding: 15px;
+
+    border: none;
+    border-radius: 30px;
+    background-color: #FFF;
+}
+
+.user-profile {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 25px;
+}
+
+.mini-title {
+    margin: 2px 0 0 25px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.mini-source {
+    margin: 2px 0 0 25px;
+    font-size: 13px;
+}
+
+.status-box {
+    width: 8px;
+    height: 100%;
+    background-color: #fa77ff;
+    overflow: visible;
+}
+
+/* div {
+    border: 2px solid red;
+} */
