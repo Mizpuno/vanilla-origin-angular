@@ -1,0 +1,14 @@
+name: test
+
+on:
+  push:
+    branch:
+      - master
+    jobs:
+      print-text:
+        runs-on:ubuntu-lastest
+
+      steps:
+
+      - name: Print
+        run: echo "test"

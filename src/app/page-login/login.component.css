@@ -33,7 +33,7 @@ input {
     width: 100vw;
     height: 100vh;
 
-    background-color: #D9D9D9;
+    background-color: #31303B;
 }
 
 .float-adjust {
@@ -83,7 +83,8 @@ input {
 }
 
 .bg-preview {
-    background: #D9D9D9;
+    background: url('../../assets/images/login-cover.jpg');
+    background-size: cover;
     height: 100%;
 }
 
